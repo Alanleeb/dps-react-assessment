@@ -13,13 +13,14 @@ class NavBar extends Component {
       <div>
         <Menu pointing>
           <Link to='/'>
-            <Menu.Item name='home' active={this.activeItem('/')} />
+            <Menu.Item name='home' color="green" active={this.activeItem('/')} />
           </Link>
-          <Menu.Menu position='right'>
-            <Link to='/'>
-              <Menu.Item name='DPS React Assessment' />
+            <Link to='/beers'>
+              <Menu.Item color="green" name='See All Beers' />
             </Link>
-          </Menu.Menu>
+            <Link to='/breweries'>
+              <Menu.Item color="green" name='See All Breweries' />
+            </Link>
         </Menu>
       </div>
     )
